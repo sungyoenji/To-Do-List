@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lsit응용</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <h1>TO DO LIST</h1>
+            <div class="input_area">
+                <input type="text" placeholder="할 일을 입력해주세요." id="task_input">
+                <a href="javascript:void(0)" id="add_btn"><p>+</p></a>
+            </div>
+       
+            <div id="list_wrap"> </div>
+
+            <!-- <div class="list_all">
+                  <div class="left">
+                      <input type="checkbox" class="item">운동하기
+                  </div>
+                   <div class="but_del">
+                        <button type="button" class="check">체크</button>
+                        <button type="button" class="del">삭제</button>
+                  </div>
+             </div> -->
+             <div class="bottom_btn">
+               <div class="left">
+                 <button id="all" class="on" >전체목록</button>
+                 <button id="notdone" >진행중인 목록</button>
+               </div>
+             <button id="all_del" onclick='remove()'>전체삭제</button>
+             </div>
+             
+         </div>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
