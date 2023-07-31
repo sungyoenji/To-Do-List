@@ -1,0 +1,169 @@
+@charset "utf-8";
+body{
+    /* background: lightcyan; */
+    background: rgb(208, 191, 212);
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+button{border: none;background: none;cursor: pointer;}
+/* 초기화 */
+
+.wrap{
+    width: 80%;
+    background: #fff;
+    margin: 50px auto 0;
+    padding: 60px 0 100px;
+    /* margin: 80px auto;
+    padding: 80px; */
+}
+.wrap .container{
+    width: 100%;
+}
+.wrap .container h1{
+    text-align: center;
+    color: #444;
+    font-size: 40px;
+    margin: 40px auto;
+    text-shadow: 3px 3px 6px #b18aba;
+}
+
+.container .input_area{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.container .input_area p{
+    width: 52px;
+    height: 52px;
+    background:rgb(237, 227, 240) url(../images/add_FILL0_wght400_GRAD0_opsz40.png)no-repeat center center;
+    background-size:32px 32px;
+    text-indent: -999999px;
+    border-radius: 8px;
+}
+.container .input_area p:hover{
+    width: 52px;
+    height: 52px;
+    background :rgb(195, 172, 202) url(../images/add_FILL0_wght400_GRAD0_opsz40.png)no-repeat center center;
+    background-size:32px 32px;
+}
+.container .input_area a{
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 10px;
+
+}
+.container .input_area #task_input{
+    width: 90%;
+    height: 50px;
+    text-indent: 20px;
+    border: 1px solid #757575;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.container .input_area #task_input:focus{
+    /* outline: rgb(128, 93, 136); */
+    outline: rgb(236, 219, 60);
+    border: 3px solid rgb(236, 219, 60);
+}
+.wrap .container .list_all{
+    width: 80%;
+    margin: -1px auto 0;
+    padding: 10px 20px;
+    position: relative;
+    border: 1px solid #eee;
+    border-right: none;
+    border-left: none;
+    background: rgb(253, 253, 249);
+
+}
+.wrap .container .list_all input{
+    margin: 8px 15px 0 0;
+}
+.wrap .container .list_all .left{
+    height: 36px;
+}
+.wrap .container .list_all .but_del{
+   position: absolute;
+   right: 20px;
+   top: 50%;
+    transform: translateY(-50%);
+}
+.wrap .container .list_all .check{
+    width: 28px;
+    height: 28px;
+    background: url(../images/done2_FILL0_wght400_GRAD0_opsz48.png)no-repeat;
+    background-size: cover;
+    text-indent: -99999px;
+}
+.wrap .container .list_all .del{
+    width: 28px;
+    height: 28px;
+    background: url(../images/close3_FILL0_wght400_GRAD0_opsz48.png)no-repeat;
+    background-size: cover;
+    text-indent: -99999px;
+}
+.wrap .container .bottom_btn{
+    display: flex;
+    justify-content: space-between;
+    margin:15px 10% 0 10%;
+    
+}
+.wrap .container .bottom_btn .left{
+    display: flex;
+}
+.wrap .container #all_del{
+    display: block;
+    text-align: center;
+    padding: 0px 15px;
+    background: rgb(195, 172, 202);
+    /* background: #b18aba; */
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.wrap #notdone{
+    display: block;
+    text-align: center;
+    padding: 0px 15px;
+    background: rgb(195, 172, 202);
+    /* background: #b18aba; */
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 0 8px;
+}
+.wrap #all{
+    display: block;
+    text-align: center;
+    padding: 0px 15px;
+    background: rgb(195, 172, 202);
+    /* background: #b18aba; */
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.wrap #all.on{
+    background: #87658f;
+}
+.wrap #notdone.on{
+    background: #87658f;
+}
+
+.done{
+    color: #ccc;
+    text-decoration: line-through;
+}
